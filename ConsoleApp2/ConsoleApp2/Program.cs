@@ -42,35 +42,48 @@ namespace ConsoleApp2
 
         //}
         //------Void metotla rda parametre kullanımı-------
-        public static void MetinYaz(string p)
-        {
-            Console.WriteLine("***********");
-            Console.WriteLine();
-            Console.WriteLine(p);
-            Console.WriteLine();
-            Console.WriteLine("*********");
+        //public static void MetinYaz(string p)
+        //{
+        //    Console.WriteLine("***********");
+        //    Console.WriteLine();
+        //    Console.WriteLine(p);
+        //    Console.WriteLine();
+        //    Console.WriteLine("*********");
 
-        }
-        public static void MetinYaz2(string parametre)
+        //}
+        //public static void MetinYaz2(string parametre)
+        //{
+        //    Console.WriteLine("-------");
+        //    Console.WriteLine();
+        //    Console.WriteLine(parametre);
+        //    Console.WriteLine();
+        //    Console.WriteLine("-------");
+        //}
+
+        //------Geriye değer döndüren metot örneği------
+        public static int toplama()
         {
-            Console.WriteLine("-------");
-            Console.WriteLine();
-            Console.WriteLine(parametre);
-            Console.WriteLine();
-            Console.WriteLine("-------");
+            int sayi1, sayi2, sonuc;
+            sayi1 = 25;
+            sayi2 = 35;
+            sonuc = sayi1 + sayi2;
+            return sonuc;
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("kelimeyi giriniz: ");
+            //Console.WriteLine("kelimeyi giriniz: ");
 
-            string kelime = Console.ReadLine();
+            //string kelime = Console.ReadLine();
 
-            MetinYaz2(kelime);
-            
+            //MetinYaz2(kelime);
 
-            MetinYaz("Merhaba");
-            Console.ReadLine();
+
+            //MetinYaz("Merhaba");
+            //Console.ReadLine();
+
+            Console.Write(toplama());
+            Console.Read();
         }
 
 
